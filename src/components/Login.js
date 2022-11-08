@@ -1,5 +1,5 @@
 import './Login.css';
-//import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import React, {useState , useEffect} from 'react';
 //import axios from "axios";
 import Routers from './Routers'
@@ -17,17 +17,17 @@ import {
 from 'mdb-react-ui-kit';
 
 function Login() {
-    const [email, setEmail]= useState({emai:""})
-    const [password, setPassword]= useState({pass:""})
+    const [email, setEmail]= useState("")
+    const [password, setPassword]= useState("")
 
-    //const navigate =useNavigate()
+    const navigate =useNavigate()
 
     const LogIn = ()=>{
-        if(email.emai.length==""&& password.pass.length==""){
+        if(email.length==0 && password.length==0){
             alert("required")
         }else{
-            alert(`welcome ${email}`)
-            //navigate('/Home')
+           // alert(`welcome ${email}`)
+            navigate('/')
         }
     }
     const Submit =()=>{
@@ -35,6 +35,7 @@ function Login() {
     }
 
   return (
+    
     <MDBContainer fluid className='p-4 background-radial-gradient overflow-hidden'>
 
       <MDBRow>
@@ -58,10 +59,10 @@ function Login() {
 
               
                 <label>البريد الالكتروني</label>
-              <MDBInput wrapperClass='mb-4'  id='form3' type='email' value={email} onChange={em=>{setEmail({...email, emai: em.target.value})}}/>
+              <MDBInput wrapperClass='mb-4'  id='form3' type='email' value={email} onChange={e=>setEmail(e.target.value)}/>
 
               <label>كلمة المرور</label>
-              <MDBInput wrapperClass='mb-4'  id='form4' type='password' value={password} onChange={pa=>{setPassword({...password, pass: pa.target.value})}}/>
+              <MDBInput wrapperClass='mb-4'  id='form4' type='password' value={password} onChange={e=>{setPassword(e.target.value)}}/>
 
               <div className='d-flex justify-content-center mb-4'>
                 <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='ذكرني' />
@@ -76,8 +77,8 @@ function Login() {
 
       </MDBRow>
 
-    </MDBContainer>
-  );
+    </MDBContainer> 
+     );
 }
 
 export default Login;
