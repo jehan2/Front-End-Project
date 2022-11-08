@@ -1,5 +1,9 @@
+/* *{
+  background-image: url("./components/23.jpg") ;
+} */
 .App {
   text-align: center;
+  background-image: url("./components/23.jpg") ;
 }
 
 .App-logo {
