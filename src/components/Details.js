@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+
 
 function Details() {
     const [state, setstate] = useState([])
@@ -21,16 +22,20 @@ function Details() {
 
     }, [])
     return (
-        <div>
+        <div className='con1'>
 
             {state.map((items, id) => {
                 return (
-                    <div key={id}>
-                        <img src={items.img} width="50%"></img>
+                    <div key={id} className='con2'>
+                        <ul>
+                        <il><img className='img-d'src={items.img} width="30%"  ></img></il>
 
-                        <p>{items.company1}</p> <button>اشترك</button><br/>
+                       <il><p>{items.company1}</p> <button className='btn'>اشترك</button ></il> <br/>
                 
-                        <p>{items.company2}</p> <button>اشترك</button>
+                       <il> <p>{items.company2}</p> <button className='btn'>اشترك</button></il> <br/>
+
+                       <il><Link to ='/Card'><button className='btn'>العودة</button></Link></il>
+                        </ul>
                     </div>
                 )
 

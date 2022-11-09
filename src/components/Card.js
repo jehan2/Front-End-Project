@@ -109,13 +109,14 @@ function Card() {
             <Button
               w={'full'}
               mt={8}
-              bg={'#151f21'}
-              color={'blue'}
+              bg={'rgba(71, 168, 71, 0.767)'}
+              color={'white'}
               rounded={'md'}
               _hover={{
                 transform: 'translateY(-2px)',
                 boxShadow: 'lg',
-              }}>
+              }}
+              >
              المزيد..
             </Button></Link>
           </Box>
