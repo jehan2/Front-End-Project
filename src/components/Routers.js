@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Card from './Card';
  import Nav from './Nav';
+import Footer from './Footer'
 
 function Routers() {
   return (
@@ -18,6 +19,7 @@ function Routers() {
               <Route path = "/Card" element = {<Card/>}/>
           </Routes>
         </Router>
+        <Footer/>
     </div>
   )
 }
