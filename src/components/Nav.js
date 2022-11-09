@@ -35,9 +35,9 @@ export default function App() {
 
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
-            <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='./'>
-                الصفحة الرئسية
+          <MDBNavbarItem>
+              <MDBNavbarLink  href='./Login' tabIndex={-1} aria-disabled='true'>
+                تسجيل الدخول
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
@@ -48,10 +48,9 @@ export default function App() {
               <MDBNavbarLink href='./Card'>خدماتنا </MDBNavbarLink>
             </MDBNavbarItem>
             
-
             <MDBNavbarItem>
-              <MDBNavbarLink  href='./Login' tabIndex={-1} aria-disabled='true'>
-                تسجيل الدخول
+              <MDBNavbarLink active aria-current='page' href='./'>
+                الصفحة الرئسية
               </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>

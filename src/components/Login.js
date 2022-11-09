@@ -44,7 +44,7 @@ function Login() {
 
           <h1 className="my-5 display-3 fw-bold ls-tight px-" style={{color: 'hsl(218, 81%, 95%)'}}>
              سجل وستجد  <br />
-            <span style={{color: 'hsl(218, 81%, 75%)'}}> افضل العروض</span>
+            <span style={{color: 'hsl(218, 81%, 95%)'}}> افضل العروض</span>
           </h1>
 
         </MDBCol>
