@@ -8,7 +8,7 @@ function Details() {
     let { id } = useParams();
 
     useEffect(() => {
-        axios.get(`https://6362424b66f75177ea2a998e.mockapi.io/insurances/${id}`)
+        axios.get(`https://6362424b66f75177ea2a998e.mockapi.io/nsurances1/${id}`)
 
             .then((response) => {
                 console.log(response.data);
@@ -26,15 +26,15 @@ function Details() {
 
             {state.map((items, id) => {
                 return (
-                    <div key={id} className='con2'>
+                    <div key={id} >
                         <ul>
-                        <il><img className='img-d'src={items.img} width="30%"  ></img></il>
+                        <li><img className='img-d'src={items.img} width="30%"  ></img></li>
 
-                       <il><p>{items.company1}</p> <button className='btn'>اشترك</button ></il> <br/>
+                       <li><p>{items.company1}</p> <button className='btn'>اشترك</button ></li> 
                 
-                       <il> <p>{items.company2}</p> <button className='btn'>اشترك</button></il> <br/>
+                       <li> <p>{items.company2}</p> <button className='btn'>اشترك</button></li> 
 
-                       <il><Link to ='/Card'><button className='btn'>العودة</button></Link></il>
+                       <li><Link to ='/Card'><button className='btn'>العودة</button></Link></li>
                         </ul>
                     </div>
                 )

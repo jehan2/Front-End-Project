@@ -30,7 +30,7 @@ function Card() {
 
 
   React.useEffect(() => {
-    axios.get("https://6362424b66f75177ea2a998e.mockapi.io/insurances").then((res)=>{
+    axios.get("https://6362424b66f75177ea2a998e.mockapi.io/nsurances1").then((res)=>{
       console.log(res.data);
       setstate(res.data);
       })
@@ -74,7 +74,7 @@ function Card() {
         <Box
           maxW={'270px'}
           w={'full'}
-         bg={'white'}
+         bg={'rgba(255, 255, 255, 0.5)'}
           boxShadow={'2xl'}
           rounded={'md'}
           overflow={'hidden'}>

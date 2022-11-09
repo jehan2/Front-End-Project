@@ -7,7 +7,7 @@ function Create() {
     const [img, setImg] = useState()
     const [company1, setCompany1] = useState()
     const [company2, setCompany2] = useState()
-    let url = "https://6362424b66f75177ea2a998e.mockapi.io/insurances"
+    let url = "https://6362424b66f75177ea2a998e.mockapi.io/nsurances1"
 
     const postData = () => {
         axios.post(url, {
