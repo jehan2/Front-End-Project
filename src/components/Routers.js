@@ -4,8 +4,11 @@ import Login from './Login';
 import Home from './Home';
 import About from './About';
 import Card from './Card';
- import Nav from './Nav';
 import Footer from './Footer'
+import Create from './Create';
+import Nav from './Nav';
+
+
 
 function Routers() {
   return (
@@ -17,6 +20,7 @@ function Routers() {
               <Route path = "/Login" element = {<Login/>}/>
               <Route path = "/About" element = {<About/>}/>
               <Route path = "/Card" element = {<Card/>}/>
+              <Route path="/Create" element = {<Create/>}/>
           </Routes>
         </Router>
         <Footer/>

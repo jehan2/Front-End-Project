@@ -91,8 +91,13 @@ import {
   VStack,
   useBreakpointValue,
 } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 
 export default function WithBackgroundImage() {
+    const navigate = useNavigate();
+    const cardNavigate =()=>{
+        navigate('./Card')
+    } 
   return (
     <Flex
       w={'full'}
@@ -130,7 +135,8 @@ export default function WithBackgroundImage() {
               bg={'blue.400'}
               rounded={'full'}
               color={'white'}
-              _hover={{ bg: 'blue.500' }}>
+              _hover={{ bg: 'blue.500' }}
+              onClick={cardNavigate} >
               لمزيد من المعلومات
             </Button>
             
