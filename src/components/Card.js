@@ -10,6 +10,7 @@ import axios from "axios"
 //     MDBBtn
 //   } from 'mdb-react-ui-kit';
 import { Grid } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import {
     Heading,
     Avatar,
@@ -20,7 +21,7 @@ import {
     Text,
     Stack,
     Button,
-    useColorModeValue,
+    useColorModeValue
 
   } from '@chakra-ui/react';
 
@@ -73,7 +74,7 @@ function Card() {
         <Box
           maxW={'270px'}
           w={'full'}
-        //   bg={useColorModeValue('white', 'gray.800')}
+         bg={'white'}
           boxShadow={'2xl'}
           rounded={'md'}
           overflow={'hidden'}>
@@ -104,19 +105,20 @@ function Card() {
                 {/* {props.disc} */}
               </Text>
             </Stack>
-  
+              <Link to={`/Details/${items.id}`}>
             <Button
               w={'full'}
               mt={8}
-            //  bg={useColorModeValue('#151f21', 'gray.900')}
-              color={'blue'}
+              bg={'rgba(71, 168, 71, 0.767)'}
+              color={'white'}
               rounded={'md'}
               _hover={{
                 transform: 'translateY(-2px)',
                 boxShadow: 'lg',
-              }}>
+              }}
+              >
              المزيد..
-            </Button>
+            </Button></Link>
           </Box>
         </Box>
       </Center>

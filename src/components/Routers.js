@@ -7,6 +7,7 @@ import Card from './Card';
 import Footer from './Footer'
 import Create from './Create';
 import Nav from './Nav';
+import Details from './Details';
 
 
 
@@ -21,6 +22,7 @@ function Routers() {
               <Route path = "/About" element = {<About/>}/>
               <Route path = "/Card" element = {<Card/>}/>
               <Route path="/Create" element = {<Create/>}/>
+              <Route path="/Details/:id" element={<Details/>}/>
           </Routes>
         </Router>
         <Footer/>
