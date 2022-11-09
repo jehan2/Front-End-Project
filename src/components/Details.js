@@ -26,9 +26,10 @@ function Details() {
             {state.map((items, id) => {
                 return (
                     <div key={id}>
-                        <img src={items.img} width="20%"></img>
+                        <img src={items.img} width="50%"></img>
+
                         <p>{items.company1}</p> <button>اشترك</button><br/>
-                        
+                
                         <p>{items.company2}</p> <button>اشترك</button>
                     </div>
                 )

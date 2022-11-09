@@ -109,7 +109,7 @@ function Card() {
             <Button
               w={'full'}
               mt={8}
-            bg={'#151f21'}
+              bg={'#151f21'}
               color={'blue'}
               rounded={'md'}
               _hover={{

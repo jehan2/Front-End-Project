@@ -4,9 +4,11 @@ import Login from './Login';
 import Home from './Home';
 import About from './About';
 import Card from './Card';
+import Footer from './Footer'
 import Create from './Create';
 import Nav from './Nav';
 import Details from './Details';
+
 
 
 function Routers() {
@@ -23,6 +25,7 @@ function Routers() {
               <Route path="/Details/:id" element={<Details/>}/>
           </Routes>
         </Router>
+        <Footer/>
     </div>
   )
 }
