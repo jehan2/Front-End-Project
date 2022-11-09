@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 import axios from "axios"
-// import styles from "./Card.module.scss";
+
 // import {
 //     MDBCard,
 //     MDBCardBody,
@@ -73,7 +73,7 @@ function Card() {
         <Box
           maxW={'270px'}
           w={'full'}
-          //bg={useColorModeValue('white', 'gray.800')}
+          bg={useColorModeValue('white', 'gray.800')}
           boxShadow={'2xl'}
           rounded={'md'}
           overflow={'hidden'}>
@@ -108,7 +108,7 @@ function Card() {
             <Button
               w={'full'}
               mt={8}
-             //bg={useColorModeValue('#151f21', 'gray.900')}
+             bg={useColorModeValue('#151f21', 'gray.900')}
               color={'blue'}
               rounded={'md'}
               _hover={{

@@ -5,12 +5,13 @@ import Home from './Home';
 import About from './About';
 import Card from './Card';
 import Create from './Create';
-// import Nav from './Nav';
+import Nav from './Nav';
+
 
 function Routers() {
   return (
     <div>
-        {/* <Nav/> */}
+        <Nav/>
         <Router>
           <Routes>  
               <Route exact path = "/" element = {<Home/>}/>    
