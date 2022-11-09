@@ -90,6 +90,7 @@ import {
   Text,
   VStack,
   useBreakpointValue,
+  Center,
 } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
@@ -134,7 +135,12 @@ export default function WithBackgroundImage() {
             <Button
               bg={'blue.400'}
               rounded={'full'}
+            // textAlign={'center'}
+             
               color={'white'}
+              
+              margin={20}
+              padding={2}
               _hover={{ bg: 'blue.500' }}
               onClick={cardNavigate} >
               لمزيد من المعلومات
