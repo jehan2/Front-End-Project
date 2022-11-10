@@ -1,4 +1,4 @@
-import './Login.css';
+
 import { useNavigate } from 'react-router-dom';
 import React, {useState , useEffect} from 'react';
 //import axios from "axios";
@@ -54,7 +54,9 @@ function Login() {
           <div id="radius-shape-1" className="position-absolute rounded-circle shadow-5-strong"></div>
           <div id="radius-shape-2" className="position-absolute shadow-5-strong"></div>
 
-          <MDBCard className='my-5 bg-glass'>
+          <MDBCard 
+          className='my-5 bg-glass' 
+          >
             <MDBCardBody className='p-5'>
 
               

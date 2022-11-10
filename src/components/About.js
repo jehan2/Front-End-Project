@@ -1,4 +1,4 @@
-//import './Home.css';
+
 import {
   Box,
   Heading,
@@ -18,46 +18,39 @@ export default function CallToActionWithAnnotation() {
 
       <Container 
       bg={'rgba(255,255,255,0.3)'}
-      maxW={'2x1'} >
+      maxW={'3x1'}
+      border={'2px solid'}
+      
+       >
         <Stack
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           py={{ base: 20, md: 36 }}>
           <Heading
+         //border={'2px '}
+        //border-radius={'25px 30px '}
+        background={'rgba(255, 255, 255, 0.5)'}
+          padding={'30px 30px'}
+          margin={'0 100px'}
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '3xl', md: '3xl' }}
             lineHeight={'110%'}>
-                <Text as={'span'} color={'blackAlpha.700'}>
+                <Text as={'span'} color={'blackAlpha.700'}  >
                        نحن في شركة تأمين نوفرلك افضل عروض وشركات التأمين 
                        جمعناها لك في مكان واحد وشلنا عنك هم انك تدور
                         على شركات التأمين عشان تحصل العرض المناسب <br /><br/>
                        </Text>
-            {/* <Text as={'span'} color={'green.400'}>
-             الافضــل
-            </Text> */}
+            
           </Heading>
-          {/* <Text color={'gray.500'}>
-            للحين تلف على مكاتب التأمين تدور الأرخص ؟ جربنا وقارن بين اسعار شركات التأمين
-          </Text> */}
+          
           <Stack
             direction={'column'}
             spacing={3}
             align={'center'}
             alignSelf={'center'}
             position={'relative'}>
-            {/* <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bg: 'green.500',
-              }}>
-لمزيد من المعلومات             </Button> */}
-            {/* <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-              Learn more
-            </Button> */}
+           
             <Box>
               {/* <Icon
                 as={Arrow}

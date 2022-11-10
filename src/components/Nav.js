@@ -20,9 +20,9 @@ export default function App() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
-    <MDBNavbar expand='lg' light bgColor='light'>
+    <MDBNavbar expand='lg' light bgColor='light' >
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'>تأمينات</MDBNavbarBrand>
+       
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
@@ -34,12 +34,15 @@ export default function App() {
         </MDBNavbarToggler>
 
         <MDBCollapse navbar show={showBasic}>
-          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+          <MDBNavbarNav className='top1'
+          //  className='mr-auto mb-2 mb-lg-0 ' 
+           >
           <MDBNavbarItem>
               <MDBNavbarLink  href='./Login' tabIndex={-1} aria-disabled='true'>
                 تسجيل الدخول
               </MDBNavbarLink>
             </MDBNavbarItem>
+
             <MDBNavbarItem>
               <MDBNavbarLink href='./About'>من نحن</MDBNavbarLink>
             </MDBNavbarItem>
@@ -50,16 +53,15 @@ export default function App() {
             
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' href='./'>
-                الصفحة الرئسية
+                 الرئيسية
               </MDBNavbarLink>
             </MDBNavbarItem>
+
           </MDBNavbarNav>
 
-          <form className='d-flex input-group w-auto'>
-            <input type='search' className='form-control' placeholder='' aria-label='Search' />
-            <MDBBtn color='primary'>بحث</MDBBtn>
-          </form>
+        
         </MDBCollapse>
+        <MDBNavbarBrand href='./' className='top'>تأمين</MDBNavbarBrand>
       </MDBContainer>
     </MDBNavbar>
   );

@@ -1,15 +1,5 @@
 import React, {useEffect, useState} from "react"
 import axios from "axios"
-
-// import {
-//     MDBCard,
-//     MDBCardBody,
-//     MDBCardTitle,
-//     MDBCardText,
-//     MDBCardImage,
-//     MDBBtn
-//   } from 'mdb-react-ui-kit';
-import { Grid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import {
     Heading,
@@ -25,9 +15,12 @@ import {
 
   } from '@chakra-ui/react';
 
+
 function Card() {
     const[state, setstate]= React.useState([])
-
+    let [pageNumber, updatePageNumber] = useState(1);
+    let [search, setSearch] = useState("");
+  let url=`https://6362424b66f75177ea2a998e.mockapi.io/nsurances1/?page=${pageNumber}&name=${search}`
 
   React.useEffect(() => {
     axios.get("https://6362424b66f75177ea2a998e.mockapi.io/nsurances1").then((res)=>{
@@ -37,39 +30,12 @@ function Card() {
   }, [])
   return (
     <div>
+      
         <div className="api-con">
         { state.map((items)=>{
       return(
-    //     <div className="img-con">
-    //     <img src={items.img}></img>
-    //     <p>{items.title}</p>
-    //     <p>{items.company1}</p> <button>اشترك</button>
-    //     {/* <p> {items.fName}</p>
-    //     <p> {items.lName}</p> */}
-        
-    //     </div>
+   
     
-
-    //   </div>
-    //     </div>
-    ////////
-    // <Grid templateColumns="repeat(3, 5fr)" gap="16">
-    // <MDBCard>
-        
-    //   <MDBCardImage className="img-con"src= {items.img} position='top' alt='...' />
-    //   <MDBCardBody>
-    //     <MDBCardTitle>{items.title}</MDBCardTitle>
-    //     <MDBCardText>
-         
-    //     </MDBCardText>
-    //     <MDBBtn href='#'>Button</MDBBtn>
-    //   </MDBCardBody>
-    
-    // </MDBCard>
-    // </Grid>
-
-
-    ////////////////////////
     <Center py={6}>
         <Box
           maxW={'270px'}
@@ -78,6 +44,7 @@ function Card() {
           boxShadow={'2xl'}
           rounded={'md'}
           overflow={'hidden'}>
+           
           <Image
             h={'250px'}
             w={'full'}

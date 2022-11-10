@@ -1,10 +1,4 @@
-
-import './App.css';
-
-import Login from './components/Login';
-//import Login from './components/Login';
-import Home from './components/Home';
-
+import './App.css'
 import Routers from './components/Routers';
 
 function App() {
@@ -12,9 +6,7 @@ function App() {
     <div className="App">
 
       <Routers/>
-      {/* <Login/>
-       */}
-
+      
     </div>
   );
 }
